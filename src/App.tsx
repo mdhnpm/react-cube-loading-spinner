@@ -1,8 +1,10 @@
 import React from 'react';
-import Header from './components/Header';
+import { CubeLoadingSpinner } from './CubeLoadingSpinner';
 
 const App = () => (
-  <Header>Hello World</Header>
+  <div style={{ margin: '100px 100px' }}>
+    <CubeLoadingSpinner />
+  </div>
 );
 
 export default App;
