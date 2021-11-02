@@ -13,11 +13,22 @@ const cssLoader = {
 };
 
 module.exports = (env, argv) => {
+  const mode = argv.mode || 'development';
+
+  const devEntry = {
+    main: './src/index.tsx',
+    withCssLoader: './src-with-css-loader/Index.tsx',
+  }
+
+  const prodEntry = {
+    main: './src/index.tsx',
+  }
+
+  const entry = mode === 'production' ? prodEntry : devEntry;
+  
   return {
-    mode: argv.mode || 'development',
-    entry: {
-      main: './src-with-css-loader/Index.tsx',
-    },
+    mode: mode,
+    entry: entry, 
     output: {
       filename: '[name]-react.js',
       path: path.join(__dirname, '/dist')

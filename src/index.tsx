@@ -5,4 +5,4 @@ import './css/global.scss';
 
 import App from './App';
 
-render(<App />, document.getElementById('cube-loading-spinner-with-css-loader'));
+render(<App />, document.getElementById('app'));
