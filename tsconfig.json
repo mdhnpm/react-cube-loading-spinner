@@ -12,18 +12,13 @@
     "esModuleInterop": true,
     "baseUrl": ".",
     "paths": {
-      "@estimateone/frontend-components": ["node_modules/@estimateone/frontend-components/index.ts"],
-      "routing": ["webpack/routing.ts"]
     }
   },
   "include" : [
-      "./src/**/*"
+      "src-with-css-loader/**/*"
   ],
   "exclude" : [
-      "./src/**/tests/**/*",
+      "src-with-css-loader/**/tests/**/*",
       "node_modules",
-      "mock-server",
-      "./src/form-components/FileUploader/*",
-      "./src/utils/helpers.ts"
   ]
 }
