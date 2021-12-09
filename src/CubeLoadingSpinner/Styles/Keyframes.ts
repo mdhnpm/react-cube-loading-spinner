@@ -13,7 +13,7 @@ export const spinner3dMoveKeyframes = keyframes`
 
 export const spinner3dTopOuterMoveKeyframes = keyframes`
   0% {
-    ${transformCrossBrosersMixin('translateX(var(--cube-offset-x)) translateY(-(var(--cube-offset-y)))')}
+    ${transformCrossBrosersMixin('translateX(var(--cube-offset-x)) translateY(calc(var(--cube-offset-y) * -1))')}
   }
 
   40% {
@@ -25,13 +25,13 @@ export const spinner3dTopOuterMoveKeyframes = keyframes`
   }
 
   100% {
-    ${transformCrossBrosersMixin('translateX(var(--cube-offset-x)) translateY(-(var(--cube-offset-y)))')}
+    ${transformCrossBrosersMixin('translateX(var(--cube-offset-x)) translateY(calc(var(--cube-offset-y) * -1))')}
   }
 `;
 
 export const spinnerBottomOuterMove = keyframes`
   0% {
-    ${transformCrossBrosersMixin('translateX(-(var(--cube-offset-x))) translateY(var(--cube-offset-y))')}
+    ${transformCrossBrosersMixin('translateX(calc(var(--cube-offset-x) * -1)) translateY(var(--cube-offset-y))')}
   }
 
   40% {
@@ -43,6 +43,6 @@ export const spinnerBottomOuterMove = keyframes`
   }
 
   100% {
-    ${transformCrossBrosersMixin('translateX(-(var(--cube-offset-x))) translateY(var(--cube-offset-y))')}
+    ${transformCrossBrosersMixin('translateX(calc(var(--cube-offset-x) * -1)) translateY(var(--cube-offset-y))')}
   }
 `;

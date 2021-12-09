@@ -11,12 +11,12 @@ const Spinner3dContainer = styled.div`
 `;
 
 const Spinner3dTopOuter = styled.div`
-  ${transformCrossBrosersMixin('translateX(var(--cube-offset-x)) translateY(-(var(--cube-offset-y)))')};
+  ${transformCrossBrosersMixin('translateX(var(--cube-offset-x)) translateY(calc(var(--cube-offset-y) * -1))')};
   ${spinnerAnimationMixin(spinner3dTopOuterMoveKeyframes)}
 `;
 
 const Spinner3dBottomOuter = styled.div`
-  ${transformCrossBrosersMixin('translateX(-(var(--cube-offset-x))) translateY(var(--cube-offset-y))')};
+  ${transformCrossBrosersMixin('translateX(calc(var(--cube-offset-x)) * -1) translateY(var(--cube-offset-y))')};
   ${spinnerAnimationMixin(spinnerBottomOuterMove)}
 `
 
