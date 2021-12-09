@@ -1,26 +1,37 @@
 import React from 'react';
-import styles from './styles.scss';
+import styled from 'styled-components';
+import { CssVariables } from './Styles/CssVariables';
+import { Spinner3dFaceGroup } from './Spinner3dFaceGroup';
+import { spinnerAnimationMixin, transformCrossBrosersMixin } from './Styles/Mixins';
+import { spinner3dTopOuterMoveKeyframes, spinnerBottomOuterMove } from './Styles/Keyframes';
 
-export const joinClassNames = (...classes: Array<string | boolean>): string => classes.filter((element) => typeof element === 'string').join(' ');
+const Spinner3dContainer = styled.div`
+  width: var(--spinner-width);
+  margin: auto;
+`;
 
-const Spinner3dFaceGroup: React.VFC = () => (
-  <div className={styles.spinner3dFaceGroup}>
-    <div className={joinClassNames(styles.spinner3dFace, styles.spinner3dFaceFront)} />
-    <div className={joinClassNames(styles.spinner3dFace, styles.spinner3dFaceRight)} />
-    <div className={joinClassNames(styles.spinner3dFace, styles.spinner3dFaceBack)} />
-  </div>
-);
+const Spinner3dTopOuter = styled.div`
+  ${transformCrossBrosersMixin('translateX(var(--cube-offset-x)) translateY(calc(var(--cube-offset-y) * -1))')};
+  ${spinnerAnimationMixin(spinner3dTopOuterMoveKeyframes)}
+`;
+
+const Spinner3dBottomOuter = styled.div`
+  ${transformCrossBrosersMixin('translateX(calc(var(--cube-offset-x)) * -1) translateY(var(--cube-offset-y))')};
+  ${spinnerAnimationMixin(spinnerBottomOuterMove)}
+`
 
 export const CubeLoadingSpinner: React.VFC = () => (
-  <div className={styles.spinner3dContainer}>
-    <div className={styles.spinner3dTopOuter}>
-      <Spinner3dFaceGroup />
-    </div>
-    <div>
-      <Spinner3dFaceGroup />
-    </div>
-    <div className={styles.spinner3dBottomOuter}>
-      <Spinner3dFaceGroup />
-    </div>
-  </div>
+  <CssVariables>
+    <Spinner3dContainer>
+      <Spinner3dTopOuter>
+        <Spinner3dFaceGroup />
+      </Spinner3dTopOuter>
+      <div>
+        <Spinner3dFaceGroup />
+      </div>
+      <Spinner3dBottomOuter>
+        <Spinner3dFaceGroup />
+      </Spinner3dBottomOuter>
+    </Spinner3dContainer>
+  </CssVariables>
 );
