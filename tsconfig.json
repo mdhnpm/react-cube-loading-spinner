@@ -9,7 +9,7 @@
     "jsx": "react",
     "skipLibCheck": true,
     "esModuleInterop": true,
-    "baseUrl": "./src",
+    "baseUrl": ".",
     "declaration": true,
     "paths": {}
   },
