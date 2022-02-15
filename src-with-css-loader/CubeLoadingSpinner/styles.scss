@@ -1,4 +1,4 @@
-@use 'sass:math';
+@use "sass:math";
 
 @mixin transformCrossBrowsers($property) {
   -webkit-transform: $property;
@@ -6,7 +6,7 @@
   transform: $property;
 }
 
-@mixin spinnerAnimationControl ($animation-name) {
+@mixin spinnerAnimationControl($animation-name) {
   animation-name: $animation-name;
   animation-duration: $spinner-speed;
   animation-timing-function: ease-in-out;
@@ -47,17 +47,23 @@ $default-secondary: #00c389;
 }
 
 .spinner3dFaceFront {
-  @include transformCrossBrowsers(rotateY(0deg) translateZ($cube-face-offset-z));
+  @include transformCrossBrowsers(
+    rotateY(0deg) translateZ($cube-face-offset-z)
+  );
   background-color: $default-main;
 }
 
 .spinner3dFaceRight {
-  @include transformCrossBrowsers(rotateY(90deg) translateZ($cube-face-offset-z));
+  @include transformCrossBrowsers(
+    rotateY(90deg) translateZ($cube-face-offset-z)
+  );
   background-color: $default-secondary;
 }
 
 .spinner3dFaceBack {
-  @include transformCrossBrowsers(rotateY(180deg) translateZ($cube-face-offset-z));
+  @include transformCrossBrowsers(
+    rotateY(180deg) translateZ($cube-face-offset-z)
+  );
   background-color: $default-main;
 }
 
@@ -72,13 +78,17 @@ $default-secondary: #00c389;
 }
 
 .spinner3dTopOuter {
-  @include transformCrossBrowsers(translateX($cube-offset-x) translateY(-($cube-offset-y)));
+  @include transformCrossBrowsers(
+    translateX($cube-offset-x) translateY(-($cube-offset-y))
+  );
   @include spinnerAnimationControl(spinner-top-outer-move);
 }
 
 @keyframes spinner-top-outer-move {
   0% {
-    @include transformCrossBrowsers(translateX($cube-offset-x) translateY(-($cube-offset-y)));
+    @include transformCrossBrowsers(
+      translateX($cube-offset-x) translateY(-($cube-offset-y))
+    );
   }
 
   40% {
@@ -90,18 +100,24 @@ $default-secondary: #00c389;
   }
 
   100% {
-    @include transformCrossBrowsers(translateX($cube-offset-x) translateY(-($cube-offset-y)));
+    @include transformCrossBrowsers(
+      translateX($cube-offset-x) translateY(-($cube-offset-y))
+    );
   }
 }
 
 .spinner3dBottomOuter {
-  @include transformCrossBrowsers(translateX(-($cube-offset-x)) translateY($cube-offset-y));
+  @include transformCrossBrowsers(
+    translateX(-($cube-offset-x)) translateY($cube-offset-y)
+  );
   @include spinnerAnimationControl(spinner-bottom-outer-move);
 }
 
 @keyframes spinner-bottom-outer-move {
   0% {
-    @include transformCrossBrowsers(translateX(-($cube-offset-x)) translateY($cube-offset-y));
+    @include transformCrossBrowsers(
+      translateX(-($cube-offset-x)) translateY($cube-offset-y)
+    );
   }
 
   40% {
@@ -113,6 +129,8 @@ $default-secondary: #00c389;
   }
 
   100% {
-    @include transformCrossBrowsers(translateX(-($cube-offset-x)) translateY($cube-offset-y));
+    @include transformCrossBrowsers(
+      translateX(-($cube-offset-x)) translateY($cube-offset-y)
+    );
   }
 }
