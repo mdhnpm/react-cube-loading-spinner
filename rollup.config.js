@@ -1,6 +1,4 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import commonjs from "@rollup/plugin-commonjs";
-import postcss from "rollup-plugin-postcss";
 import renameNodeModules from "rollup-plugin-rename-node-modules";
 import rename from "rollup-plugin-rename";
 import resolve from "@rollup/plugin-node-resolve";
@@ -35,7 +33,7 @@ export default {
       format: "esm",
       sourcemap: false,
       preserveModules: true,
-      // preserveModulesRoot: 'src', // this will make d.ts files created in the separate folder. Without it, it creates d.ts files in the same folders.
+      // preserveModulesRoot: "src", // this will make d.ts files created in the separate folder. Without it, it creates d.ts files in the same folders.
     },
   ],
   external: [...Object.keys(pkg.dependencies || {})],
@@ -46,9 +44,6 @@ export default {
     }),
     resolve(),
     commonjs(),
-    postcss({
-      modules: true,
-    }),
     ...nodeModulePlugins,
     Boolean(process.env.ANALYZE) &&
       visualizer({

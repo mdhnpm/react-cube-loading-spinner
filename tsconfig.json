@@ -4,21 +4,15 @@
     "outDir": "./dist/",
     "sourceMap": true,
     "noImplicitAny": true,
-    "module": "commonjs",
-    "target": "es2015",
+    "module": "esnext",
+    "target": "es6",
     "jsx": "react",
-    "resolveJsonModule": true,
-    "skipLibCheck" : true,
+    "skipLibCheck": true,
     "esModuleInterop": true,
-    "baseUrl": ".",
-    "paths": {
-    }
+    "baseUrl": "./src",
+    "declaration": true,
+    "paths": {}
   },
-  "include" : [
-      "src-with-css-loader/**/*"
-  ],
-  "exclude" : [
-      "src-with-css-loader/**/tests/**/*",
-      "node_modules",
-  ]
+  "include": ["src-with-css-loader/**/*"],
+  "exclude": ["src-with-css-loader/**/tests/**/*", "node_modules"]
 }
