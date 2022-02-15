@@ -1,13 +1,26 @@
-import React from 'react';
-import styles from './styles.scss';
+import React from "react";
+import styles from "./styles.scss";
 
-export const joinClassNames = (...classes: Array<string | boolean>): string => classes.filter((element) => typeof element === 'string').join(' ');
+export const joinClassNames = (...classes: Array<string | boolean>): string =>
+  classes.filter((element) => typeof element === "string").join(" ");
 
 const Spinner3dFaceGroup: React.VFC = () => (
   <div className={styles.spinner3dFaceGroup}>
-    <div className={joinClassNames(styles.spinner3dFace, styles.spinner3dFaceFront)} />
-    <div className={joinClassNames(styles.spinner3dFace, styles.spinner3dFaceRight)} />
-    <div className={joinClassNames(styles.spinner3dFace, styles.spinner3dFaceBack)} />
+    <div
+      className={joinClassNames(
+        styles.spinner3dFace,
+        styles.spinner3dFaceFront
+      )}
+    />
+    <div
+      className={joinClassNames(
+        styles.spinner3dFace,
+        styles.spinner3dFaceRight
+      )}
+    />
+    <div
+      className={joinClassNames(styles.spinner3dFace, styles.spinner3dFaceBack)}
+    />
   </div>
 );
 
