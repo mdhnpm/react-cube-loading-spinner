@@ -15,9 +15,12 @@ jobs:
       - name: Install
         run: |
           yarn install
-      - name: Unit-Tests
+      - name: Build
         run: |
-          yarn test
+          yarn build
+      # - name: Unit-Tests
+      #   run: |
+      #     yarn test
 
   # run-release:
   #   needs: [test-and-build-feature-branch]
