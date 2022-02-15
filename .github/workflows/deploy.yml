@@ -15,9 +15,6 @@ jobs:
       - name: Install
         run: |
           yarn install
-      - name: Unit-Tests
-        run: |
-          yarn test
 
   run-release:
     needs: [build-and-deploy]
@@ -38,7 +35,7 @@ jobs:
       - name: Install and build
         run: |
           yarn install
-          yarn build:package
+          yarn build
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v2
         env:
