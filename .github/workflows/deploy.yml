@@ -15,7 +15,6 @@ jobs:
       - name: Install
         run: |
           yarn install
-
   run-release:
     needs: [build-and-test]
     runs-on: ubuntu-latest
