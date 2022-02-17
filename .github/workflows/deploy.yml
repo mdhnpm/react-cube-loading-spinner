@@ -31,7 +31,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           registry-url: "https://npm.pkg.github.com"
-          scope: "@mydatahack"
+          scope: "@mdhtest"
       - name: Install and build
         run: |
           yarn install
