@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
-  "repository": "git@github.com-mydatahack:mdhnpm/cube-loading-spinner.git",
+  "repository": "git@github.com:mdhnpm/cube-loading-spinner.git",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "author": "mdh",
   "license": "MIT",
   "scripts": {
