@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/mdhnpm/cube-loading-spinner/compare/v1.0.0...v1.1.0) (2022-02-17)
+
+
+### Features
+
+* **test:** testing ci ([0d2c373](https://github.com/mdhnpm/cube-loading-spinner/commit/0d2c37362856c0452c21fbd2b8bd38dc9afc4b99))
+
 # 1.0.0 (2022-02-17)
 
 
