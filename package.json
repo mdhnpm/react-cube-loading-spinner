@@ -1,5 +1,5 @@
 {
-  "name": "cube-loading-spinner",
+  "name": "@mydatahack/cube-loading-spinner",
   "version": "1.0.0",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
