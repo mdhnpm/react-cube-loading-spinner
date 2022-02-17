@@ -1,6 +1,6 @@
 # cube-loading-spinner
 
-
+In progress...
 
 Notes
 
@@ -35,7 +35,6 @@ export default {
   ],
 };
 ```
-
 
 ```js
 import commonjs from "@rollup/plugin-commonjs";
@@ -93,5 +92,4 @@ export default {
       }),
   ],
 };
-
 ```
