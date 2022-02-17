@@ -4,6 +4,9 @@
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "repository": "git@github.com:mdhnpm/cube-loading-spinner.git",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "author": "mdh",
   "license": "MIT",
   "scripts": {
