@@ -1,3 +1,11 @@
+# [1.2.0](https://github.com/mdhnpm/cube-loading-spinner/compare/v1.1.0...v1.2.0) (2022-02-17)
+
+
+### Features
+
+* **test:** troubleshooting ci - update scope in name ([736a8ef](https://github.com/mdhnpm/cube-loading-spinner/commit/736a8effa69ca3d82107e3f8cd8ab9fe8d8a841f))
+* **test:** troubleshooting ci update scope in name ([99d2705](https://github.com/mdhnpm/cube-loading-spinner/commit/99d27050fcb9003a96e4de26491286b62f6b0f31))
+
 # [1.1.0](https://github.com/mdhnpm/cube-loading-spinner/compare/v1.0.0...v1.1.0) (2022-02-17)
 
 
