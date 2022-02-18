@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/mdhnpm/cube-loading-spinner/compare/v1.4.0...v1.5.0) (2022-02-18)
+
+
+### Features
+
+* **component:** new build ([6e74238](https://github.com/mdhnpm/cube-loading-spinner/commit/6e742381f6f8de919c47ad495591a05810a19b54))
+
 # [1.4.0](https://github.com/mdhnpm/cube-loading-spinner/compare/v1.3.0...v1.4.0) (2022-02-18)
 
 
