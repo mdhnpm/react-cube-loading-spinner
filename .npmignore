@@ -1,10 +1,23 @@
+# folders
 src
 src-with-css-loader
 public
-
-yarn.lock
-yarn-error.log
-
 .github
 .husky
 .vscode
+
+# files
+yarn.lock
+yarn-error.log
+.releaserc.js
+.stylelintrc
+.CHANGELOG.md
+commitlint.config.js
+jest.config.js
+LICENSE
+README.md
+rollup.config.js
+setup.ts
+tsconfig.json
+webpack.config.js
+webpack.css.extract.config.js
