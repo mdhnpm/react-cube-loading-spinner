@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/mdhnpm/cube-loading-spinner/compare/v1.3.0...v1.4.0) (2022-02-18)
+
+
+### Features
+
+* **component:** update .npmigore file so that we can exclude unnecessary files ([1f53c15](https://github.com/mdhnpm/cube-loading-spinner/commit/1f53c1582c7d074ceb7eb8b960a552122bbf1d45))
+
 # [1.3.0](https://github.com/mdhnpm/cube-loading-spinner/compare/v1.2.0...v1.3.0) (2022-02-17)
 
 
