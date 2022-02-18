@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/mdhnpm/cube-loading-spinner/compare/v1.2.0...v1.3.0) (2022-02-17)
+
+
+### Features
+
+* **test:** update scope in name again ([7856143](https://github.com/mdhnpm/cube-loading-spinner/commit/785614354e5055a23bc5376499e276dda7b373dc))
+
 # [1.2.0](https://github.com/mdhnpm/cube-loading-spinner/compare/v1.1.0...v1.2.0) (2022-02-17)
 
 
