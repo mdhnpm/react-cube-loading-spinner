@@ -1,3 +1,10 @@
+# [1.6.0-add-github-action-npm-publish.2](https://github.com/mdhnpm/cube-loading-spinner/compare/v1.6.0-add-github-action-npm-publish.1...v1.6.0-add-github-action-npm-publish.2) (2022-02-20)
+
+
+### Features
+
+* testing CI ([4c79880](https://github.com/mdhnpm/cube-loading-spinner/commit/4c7988060af14dbe575958d44803d8f7759cae9e))
+
 # [1.6.0-add-github-action-npm-publish.1](https://github.com/mdhnpm/cube-loading-spinner/compare/v1.5.0...v1.6.0-add-github-action-npm-publish.1) (2022-02-20)
 
 
