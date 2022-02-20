@@ -1,10 +1,19 @@
-name: Test and Build from feature branch
+# Publishing to npm repo
+
+https://sergiodxa.com/articles/github-actions-npm-publish
+
+# Publishing to Github npm repository
+
+copy & paste this into `deploy.yml`. It works.
+
+```yml
+name: Deploy to GitHub Page
 on:
   push:
-    branches-ignore:
-      - "main"
+    branches:
+      - main
 jobs:
-  test-and-build-feature-branch:
+  build-and-test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -15,15 +24,8 @@ jobs:
       - name: Install
         run: |
           yarn install
-      - name: Build
-        run: |
-          yarn build
-      # - name: Unit-Tests
-      #   run: |
-      #     yarn test
-
   run-release:
-    needs: [test-and-build-feature-branch]
+    needs: [build-and-test]
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -36,8 +38,8 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-          registry-url: "https://registry.npmjs.org"
-          scope: "@mdhnpm"
+          registry-url: "https://npm.pkg.github.com"
+          scope: "@mydatahack"
       - name: Install and build
         run: |
           yarn install
@@ -46,4 +48,5 @@ jobs:
         uses: cycjimmy/semantic-release-action@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
