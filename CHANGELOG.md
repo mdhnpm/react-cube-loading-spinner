@@ -1,3 +1,10 @@
+# [1.6.0-add-github-action-npm-publish.1](https://github.com/mdhnpm/cube-loading-spinner/compare/v1.5.0...v1.6.0-add-github-action-npm-publish.1) (2022-02-20)
+
+
+### Features
+
+* **init:** npm publish pipeline ([0e5cf35](https://github.com/mdhnpm/cube-loading-spinner/commit/0e5cf353c3cc2efde38d927ca68aa26c7410acfe))
+
 # [1.5.0](https://github.com/mdhnpm/cube-loading-spinner/compare/v1.4.0...v1.5.0) (2022-02-18)
 
 
