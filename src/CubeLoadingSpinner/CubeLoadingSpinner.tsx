@@ -39,7 +39,8 @@ interface CubeLoadingSpinnerProps {
 export const CubeLoadingSpinner: React.VFC<CubeLoadingSpinnerProps> = ({
   mainColor = "#141b4d",
   secondaryColor = "#00c389",
-  spinnerWidth = "32px",
+  // 32 looks wired, 30 and 34 works...
+  spinnerWidth = "30px",
   spinnerSpeed = "1.5s",
 }) => (
   <CssVariables
