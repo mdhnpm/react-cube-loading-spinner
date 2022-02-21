@@ -1,3 +1,12 @@
+# [1.6.0](https://github.com/mdhnpm/cube-loading-spinner/compare/v1.5.1...v1.6.0) (2022-02-21)
+
+
+### Features
+
+* **ci:** update .npmignore to see if only src at root level is ignored ([831d61a](https://github.com/mdhnpm/cube-loading-spinner/commit/831d61adf364e4c0758b3c624a6f6d99a6db4b66))
+* **fix:** fixing ci ([1dcac82](https://github.com/mdhnpm/cube-loading-spinner/commit/1dcac822a37b3da5c0d6909cf61cf729b213fc78))
+* **init:** npm publish pipeline update ([863b8aa](https://github.com/mdhnpm/cube-loading-spinner/commit/863b8aacd462676d532d9867fb7f6257c050d9c0))
+
 ## [1.5.1](https://github.com/mdhnpm/cube-loading-spinner/compare/v1.5.0...v1.5.1) (2022-02-21)
 
 ### Bug Fixes
