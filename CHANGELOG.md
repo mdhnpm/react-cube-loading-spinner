@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/mdhnpm/cube-loading-spinner/compare/v1.6.0...v1.6.1) (2022-02-21)
+
+
+### Bug Fixes
+
+* **build:** updating tsconfig to include index.ts for type generation ([76dd37e](https://github.com/mdhnpm/cube-loading-spinner/commit/76dd37e25a2345bceb1a2af6e3ace999c787bc6a))
+
 # [1.6.0](https://github.com/mdhnpm/cube-loading-spinner/compare/v1.5.1...v1.6.0) (2022-02-21)
 
 
