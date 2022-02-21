@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/mdhnpm/react-cube-loading-spinner/compare/v1.8.0...v2.0.0) (2022-02-21)
+
+
+### Bug Fixes
+
+* **component:** update the dimension culculation logic ([a3d6409](https://github.com/mdhnpm/react-cube-loading-spinner/commit/a3d6409faf0b2b0d18a5de8fe9aa9bfd9f796a4d)), closes [#10](https://github.com/mdhnpm/react-cube-loading-spinner/issues/10)
+
+
+### BREAKING CHANGES
+
+* **component:** Prop update
+
 # [1.8.0](https://github.com/mdhnpm/react-cube-loading-spinner/compare/v1.7.0...v1.8.0) (2022-02-21)
 
 
