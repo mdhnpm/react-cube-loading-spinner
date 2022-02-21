@@ -29,7 +29,7 @@ const updateRepoPlugin = [
 const publishPackagePlugin = [
   "@semantic-release/npm",
   {
-    // 'npmPublish': false
+    npmPublish: true,
   },
 ];
 
@@ -51,6 +51,6 @@ module.exports = {
   branches: [
     "main",
     // if you want to release from the branch, we can type the branch name here
-    { name: "Add-npm-module-capability", prerelease: true },
+    { name: "add-github-action-npm-publish", prerelease: true },
   ],
 };

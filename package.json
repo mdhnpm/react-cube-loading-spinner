@@ -1,11 +1,11 @@
 {
   "name": "@mdhnpm/cube-loading-spinner",
-  "version": "1.5.1",
+  "version": "1.6.0-add-github-action-npm-publish.1",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "repository": "git@github.com:mdhnpm/cube-loading-spinner.git",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://registry.npmjs.org/"
   },
   "author": "mdh",
   "license": "MIT",
