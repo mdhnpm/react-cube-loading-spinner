@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/mdhnpm/cube-loading-spinner/compare/v1.6.1...v1.7.0) (2022-02-21)
+
+
+### Features
+
+* **component:** making loader configurable ([8a0b205](https://github.com/mdhnpm/cube-loading-spinner/commit/8a0b2051230284d95d7f906d5263468730ab41d5))
+
 ## [1.6.1](https://github.com/mdhnpm/cube-loading-spinner/compare/v1.6.0...v1.6.1) (2022-02-21)
 
 
