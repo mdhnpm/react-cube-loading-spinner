@@ -1,5 +1,5 @@
 # folders
-src
+./src
 src-with-css-loader
 public
 .github
@@ -19,5 +19,8 @@ setup.ts
 tsconfig.json
 webpack.config.js
 webpack.css.extract.config.js
+.editorconfig
+.eslintrc.json
+index.ts
 
 # Note that README.md and LICENSE will be always included even it is listed here!
