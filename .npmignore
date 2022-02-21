@@ -1,5 +1,5 @@
 # folders
-./src
+# adding src will delete dist/src, too. ./src doesn't work. src may need to be deleted in ci?
 src-with-css-loader
 public
 .github
@@ -21,6 +21,5 @@ webpack.config.js
 webpack.css.extract.config.js
 .editorconfig
 .eslintrc.json
-index.ts
 
 # Note that README.md and LICENSE will be always included even it is listed here!
