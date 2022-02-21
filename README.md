@@ -1,4 +1,4 @@
-# Cube Loading Spinner for React
+# React Cube Loading Spinner
 
 Super cool configurable cube loading spinner for react. There are 4 configurable options.
 
