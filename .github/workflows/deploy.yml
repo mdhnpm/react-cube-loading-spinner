@@ -43,7 +43,7 @@ jobs:
   #         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   run-release:
-    needs: [test-and-build-feature-branch]
+    needs: [build-and-test]
     runs-on: ubuntu-latest
     strategy:
       matrix:
