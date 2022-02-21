@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/mdhnpm/react-cube-loading-spinner/compare/v1.7.0...v1.8.0) (2022-02-21)
+
+
+### Features
+
+* **name:** update the package name ([2e76c28](https://github.com/mdhnpm/react-cube-loading-spinner/commit/2e76c286259961504cca1f5a7c8a03437f2409e5))
+
 # [1.7.0](https://github.com/mdhnpm/cube-loading-spinner/compare/v1.6.1...v1.7.0) (2022-02-21)
 
 
