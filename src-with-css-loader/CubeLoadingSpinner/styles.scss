@@ -13,7 +13,7 @@
   animation-iteration-count: infinite;
 }
 
-$spinner-width: 32px;
+$spinner-width: 28px;
 $spinner-height: math.div($spinner-width, 3);
 $spinner-container-size: $spinner-width;
 $spinner-perspective: 2000px;
