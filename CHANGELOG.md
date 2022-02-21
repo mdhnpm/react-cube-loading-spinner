@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/mdhnpm/cube-loading-spinner/compare/v1.5.0...v1.5.1) (2022-02-21)
+
+
+### Bug Fixes
+
+* **ci:** updating .npmignore to include src in dist ([786a241](https://github.com/mdhnpm/cube-loading-spinner/commit/786a241f2c52d545d2e8d302fbdd7728559b4ce9))
+
 # [1.5.0](https://github.com/mdhnpm/cube-loading-spinner/compare/v1.4.0...v1.5.0) (2022-02-18)
 
 
