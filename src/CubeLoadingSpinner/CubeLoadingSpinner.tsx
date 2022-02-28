@@ -33,32 +33,34 @@ const Spinner3dBottomOuter = styled.div`
 interface CubeLoadingSpinnerProps {
   mainColor?: string;
   secondaryColor?: string;
-  spinnerWidth?: string;
-  spinnerSpeed?: string;
+  spinnerInnerHeight?: number;
+  spinnerSpeed?: number;
 }
 export const CubeLoadingSpinner: React.VFC<CubeLoadingSpinnerProps> = ({
   mainColor = "#141b4d",
   secondaryColor = "#00c389",
-  // 32 looks wired, 30 and 34 works...
-  spinnerWidth = "30px",
-  spinnerSpeed = "1.5s",
-}) => (
-  <CssVariables
-    mainColor={mainColor}
-    secondaryColor={secondaryColor}
-    spinnerWidth={spinnerWidth}
-    spinnerSpeed={spinnerSpeed}
-  >
-    <Spinner3dContainer>
-      <Spinner3dTopOuter>
-        <Spinner3dFaceGroup />
-      </Spinner3dTopOuter>
-      <div>
-        <Spinner3dFaceGroup />
-      </div>
-      <Spinner3dBottomOuter>
-        <Spinner3dFaceGroup />
-      </Spinner3dBottomOuter>
-    </Spinner3dContainer>
-  </CssVariables>
-);
+  spinnerInnerHeight = 10,
+  spinnerSpeed = 1.5,
+}) => {
+  const spinnerWidth = spinnerInnerHeight * 3;
+  return (
+    <CssVariables
+      mainColor={mainColor}
+      secondaryColor={secondaryColor}
+      spinnerWidth={spinnerWidth + "px"}
+      spinnerSpeed={spinnerSpeed + "s"}
+    >
+      <Spinner3dContainer>
+        <Spinner3dTopOuter>
+          <Spinner3dFaceGroup />
+        </Spinner3dTopOuter>
+        <div>
+          <Spinner3dFaceGroup />
+        </div>
+        <Spinner3dBottomOuter>
+          <Spinner3dFaceGroup />
+        </Spinner3dBottomOuter>
+      </Spinner3dContainer>
+    </CssVariables>
+  );
+};

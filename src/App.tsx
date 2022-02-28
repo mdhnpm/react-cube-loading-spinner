@@ -6,8 +6,8 @@ const App = () => (
     <CubeLoadingSpinner
       mainColor="black"
       secondaryColor="gray"
-      spinnerWidth="28px"
-      spinnerSpeed="1.5s"
+      spinnerInnerHeight={9}
+      spinnerSpeed={1.5}
     />
   </div>
 );

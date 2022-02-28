@@ -1,6 +1,6 @@
 {
   "name": "@mdhnpm/react-cube-loading-spinner",
-  "version": "1.8.0",
+  "version": "2.0.0",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "repository": "git@github.com:mdhnpm/react-cube-loading-spinner.git",
@@ -9,6 +9,14 @@
   },
   "author": "mdh",
   "license": "MIT",
+  "description": "Configurable 3d cube loading spinner built with and for ReactJS",
+  "keywords": [
+    "react-component",
+    "ui",
+    "animation",
+    "3d",
+    "loading spinner"
+  ],
   "scripts": {
     "lint-css": "stylelint 'src/**/*.{c,sc,le}ss'",
     "fix-css": "printf '\\033[43mNote: You may need to run this again if any of your CSS property names contain uppercase letters.\\033[0m' && stylelint 'src/**/*.{c,sc,le}ss' --fix -f 'verbose'",
