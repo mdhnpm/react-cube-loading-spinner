@@ -1,3 +1,11 @@
+# [2.1.0](https://github.com/mdhnpm/react-cube-loading-spinner/compare/v2.0.0...v2.1.0) (2022-02-28)
+
+
+### Features
+
+* **build:** update module esnext to es6 ([34cb245](https://github.com/mdhnpm/react-cube-loading-spinner/commit/34cb245eee43b89562666ef33ebbf069c0041454))
+* **build:** update tsconfig module to es6 ([49ba12e](https://github.com/mdhnpm/react-cube-loading-spinner/commit/49ba12ede77c08cc17f5369c0728e52db2e4760f))
+
 # [2.0.0](https://github.com/mdhnpm/react-cube-loading-spinner/compare/v1.8.0...v2.0.0) (2022-02-21)
 
 
