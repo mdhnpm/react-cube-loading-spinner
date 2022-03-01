@@ -39,3 +39,15 @@ And this is what it looks like...
 <img src="./gif/spinner.gif" alt="spinner gif"/>
 
 Enjoy 🤟💀🤟
+
+## Notes
+
+The library is using ES Module. To run unit tests with jest for the component including the loader, you need to add this in your jest config.
+
+```json
+"jest": {
+  "transformIgnorePatterns": [
+    "/node_modules/@mdhnpm/(?!react-cube-loading-spinner)"
+  ]
+},
+```
