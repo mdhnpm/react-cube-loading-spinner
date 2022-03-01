@@ -1,3 +1,5 @@
+## [2.1.1](https://github.com/mdhnpm/react-cube-loading-spinner/compare/v2.1.0...v2.1.1) (2022-03-01)
+
 # [2.1.0](https://github.com/mdhnpm/react-cube-loading-spinner/compare/v2.0.0...v2.1.0) (2022-02-28)
 
 
