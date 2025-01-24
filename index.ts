@@ -1,3 +1,3 @@
-import { CubeLoadingSpinner } from "./src/CubeLoadingSpinner";
+import { CubeLoadingSpinner } from './src/CubeLoadingSpinner'
 
-export { CubeLoadingSpinner };
+export { CubeLoadingSpinner }
