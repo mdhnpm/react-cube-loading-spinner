@@ -2,10 +2,14 @@ name: Test and Build from feature branch
 on:
   push:
     branches-ignore:
-      - "main"
+      - 'main'
 jobs:
   test-and-build-feature-branch:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node-version: [18.x]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
