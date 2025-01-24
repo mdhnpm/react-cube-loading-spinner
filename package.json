@@ -7,7 +7,6 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
-  "type": "module",
   "author": "mdh",
   "license": "MIT",
   "description": "Configurable 3d cube loading spinner built with and for ReactJS",
