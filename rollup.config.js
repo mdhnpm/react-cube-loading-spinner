@@ -1,11 +1,11 @@
-import commonjs from "@rollup/plugin-commonjs";
-import renameNodeModules from "rollup-plugin-rename-node-modules";
-import rename from "rollup-plugin-rename";
-import resolve from "@rollup/plugin-node-resolve";
-import typescript from "@rollup/plugin-typescript";
-import { visualizer } from "rollup-plugin-visualizer";
+import commonjs from '@rollup/plugin-commonjs'
+import renameNodeModules from 'rollup-plugin-rename-node-modules'
+import rename from 'rollup-plugin-rename'
+import resolve from '@rollup/plugin-node-resolve'
+import typescript from '@rollup/plugin-typescript'
+import { visualizer } from 'rollup-plugin-visualizer'
 
-import pkg from "./package.json";
+import pkg from './package.json'
 
 /**
  * The build currently includes node_modules: https://github.com/rollup/rollup/issues/3684
@@ -14,23 +14,23 @@ import pkg from "./package.json";
  */
 
 const nodeModulePlugins = [
-  renameNodeModules("vendor"),
+  renameNodeModules('vendor'),
   rename({
-    include: ["**/*.js"],
+    include: ['**/*.js'],
     // find node module and place it in the vendor directory
     map: (name) =>
       name
-        .replace("node_modules", "vendor")
-        .replace("../../vendor", "../vendor"),
+        .replace('node_modules', 'vendor')
+        .replace('../../vendor', '../vendor'),
   }),
-];
+]
 
 export default {
-  input: ["./index.ts"],
+  input: ['./index.ts'],
   output: [
     {
-      dir: "dist",
-      format: "esm",
+      dir: 'dist',
+      format: 'esm',
       sourcemap: false,
       preserveModules: true,
       // preserveModulesRoot: "src", // this will make d.ts files created in the separate folder. Without it, it creates d.ts files in the same folders.
@@ -40,16 +40,16 @@ export default {
   plugins: [
     typescript({
       sourceMap: false,
-      exclude: ["**/*.(test|spec).(ts|tsx)"], // don't generate *.d.ts files
+      exclude: ['**/*.(test|spec).(ts|tsx)'], // don't generate *.d.ts files
     }),
     resolve(),
     commonjs(),
     ...nodeModulePlugins,
     Boolean(process.env.ANALYZE) &&
       visualizer({
-        filename: "stats.html",
-        template: "treemap",
+        filename: 'stats.html',
+        template: 'treemap',
         open: true,
       }),
   ],
-};
+}

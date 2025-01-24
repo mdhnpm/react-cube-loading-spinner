@@ -3,17 +3,17 @@ const HtmlWebPackPlugin = require('html-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const path = require('path')
-const devMode = process.env.NODE_ENV !== 'production';
+const devMode = process.env.NODE_ENV !== 'production'
 
 const cssLoader = {
   loader: 'css-loader',
   options: {
     importLoaders: 1,
   },
-};
+}
 
 module.exports = (env, argv) => {
-  const mode = argv.mode || 'development';
+  const mode = argv.mode || 'development'
 
   const devEntry = {
     main: './src/index.tsx',
@@ -24,23 +24,23 @@ module.exports = (env, argv) => {
     main: './src/index.tsx',
   }
 
-  const entry = mode === 'production' ? prodEntry : devEntry;
-  
+  const entry = mode === 'production' ? prodEntry : devEntry
+
   return {
     mode: mode,
-    entry: entry, 
+    entry: entry,
     output: {
       filename: '[name]-react.js',
-      path: path.join(__dirname, '/dist')
+      path: path.join(__dirname, '/dist'),
     },
     resolve: {
-      extensions: ['.ts', '.tsx', '.js']
+      extensions: ['.ts', '.tsx', '.js'],
     },
     devServer: {
       inline: true,
       contentBase: './public',
       historyApiFallback: true,
-      port: 3002
+      port: 3002,
     },
     devtool: false,
     optimization: {
@@ -53,18 +53,16 @@ module.exports = (env, argv) => {
           terserOptions: {
             // https://github.com/webpack-contrib/terser-webpack-plugin#terseroptions
             // using default options
-          }
-        })
-      ]
+          },
+        }),
+      ],
     },
     module: {
       rules: [
         {
           test: /\.[tj]sx?$/,
           exclude: /node_modules/,
-          use: [
-            { loader: 'ts-loader'}
-          ]
+          use: [{ loader: 'ts-loader' }],
         },
         {
           test: /\.css$/,
@@ -90,20 +88,22 @@ module.exports = (env, argv) => {
         },
         {
           test: /fonts.+\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-          use: [{
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: 'fonts/',
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: '[name].[ext]',
+                outputPath: 'fonts/',
+              },
             },
-          }],
+          ],
         },
-      ]
+      ],
     },
     plugins: [
       new HtmlWebPackPlugin({
         template: './public/index.html',
-        filename: 'index.html'
+        filename: 'index.html',
       }),
       // new CopyWebpackPlugin({
       //   patterns: [
@@ -111,6 +111,6 @@ module.exports = (env, argv) => {
       //     { from: 'public/js', to: 'js' },
       //   ],
       // }),
-    ]
+    ],
   }
 }
